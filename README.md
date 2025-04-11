@@ -1,10 +1,10 @@
-# 🖼️ Tienda de Arte La Musa - Web App
+# Tienda de Arte La Musa - Web App
 
 Aplicación web responsiva desarrollada solo con **HTML**, **CSS** y **JavaScript**, que simula el funcionamiento de una tienda de arte en línea. El usuario puede visualizar obras en distintas categorías, agregarlas a un carrito simulado y completar un formulario de pago.
 
 ---
 
-## 🎯 Objetivos
+##  Objetivos
 
 - Visualizar productos de arte clasificados en:
   - Abstracto
@@ -17,7 +17,7 @@ Aplicación web responsiva desarrollada solo con **HTML**, **CSS** y **JavaScrip
 
 ---
 
-## 🛠️ Tecnologías Usadas
+## Tecnologías Usadas
 
 - HTML5
 - CSS3
@@ -27,7 +27,7 @@ Aplicación web responsiva desarrollada solo con **HTML**, **CSS** y **JavaScrip
 
 ---
 
-## 🗂️ Estructura del Proyecto
+## Estructura del Proyecto
 
 ```
 tienda-arte-la-musa/
@@ -45,7 +45,7 @@ tienda-arte-la-musa/
 
 ---
 
-## 🚀 Ejecución con Docker
+##  Ejecución con Docker
 
 ### Construcción de la imagen:
 
@@ -67,20 +67,33 @@ http://localhost:8080
 
 ---
 
-## 📸 Créditos Artísticos
+## Créditos Artísticos
 
 Este proyecto utiliza imágenes locales de estilo abstracto, realista y esculturas clásicas para simular una galería de arte.
 
 ---
 
-## ⚠️ Notas
+##  Notas
 
 - El carrito y el pago son simulaciones, sin backend ni base de datos.
 - Ideal para demostraciones, maquetas visuales o prácticas con frontend y Docker.
 
 ---
 
-## 👨‍💻 Autores
+## Github 
+
+- Repositorio de pagina web con documentacion.
+- https://github.com/Arte-la-Musa/Arte-la-Musa.github.io
+
+---
+
+## Pagina web en Github
+
+- https://Arte-la-Musa.github.io
+
+
+---
+##  Autores
 
 **Franco Aaron Figueroa Lopez**  
 **Nicolas David Chamorro Saavedra**
