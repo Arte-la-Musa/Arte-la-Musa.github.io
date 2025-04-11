@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Arte La Musa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tienda de Arte La Musa</h1>
+        <nav>
+            <ul>
+                <li><a href="#abstracto">Abstracto</a></li>
+                <li><a href="#realismo">Realismo</a></li>
+                <li><a href="#esculturas">Esculturas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="productos">
+            <h2 id="abstracto">Abstracto</h2>
+            <div class="producto">
+                <img src="img/abstracto1.jpg" alt="Obra abstracta 1">
+                <h3>Impacto Carmesí</h3>
+                <p>Explosión de rojos intensos que representa la emoción pura del movimiento.</p>
+                <p class="precio">$50.000</p>
+                <button onclick="agregarAlCarrito('Impacto Carmesí', 50000)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/abstracto2.jpg" alt="Obra abstracta 2">
+                <h3>Fuego Interior</h3>
+                <p>Mezcla fluida de colores que simula una energía estallando desde el centro.</p>
+                <p class="precio">$65.000</p>
+                <button onclick="agregarAlCarrito('Geometría Emocional', 65000)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/abstracto3.jpg" alt="Obra abstracta 3">
+                <h3>Constelación Geométrica</h3>
+                <p>Composición vibrante con figuras geométricas que evocan energía cósmica.</p>
+                <p class="precio">$58.000</p>
+                <button onclick="agregarAlCarrito('Constelación Geométrica', 58000)">Agregar al carrito</button>
+            </div>
+
+            <h2 id="realismo">Realismo</h2>
+            <div class="producto">
+                <img src="img/realismo1.jpg" alt="Obra realista 1">
+                <h3>Sendero en Otoño</h3>
+                <p>Paisaje sereno con montañas y follaje dorado que transmite calma y nostalgia.</p>
+                <p class="precio">$70.000</p>
+                <button onclick="agregarAlCarrito('Sendero en Otoño', 70000)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/realismo2.jpg" alt="Obra realista 2">
+                <h3>El Viajero sobre el Mar de Niebla</h3>
+                <p>Escena introspectiva que simboliza la contemplación del hombre frente a la naturaleza.</p>
+                <p class="precio">$68.000</p>
+                <button onclick="agregarAlCarrito('El Viajero sobre el Mar de Niebla', 68000)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/realismo3.jpg" alt="Obra realista 3">
+                <h3>Descanso del Obrero</h3>
+                <p>Representación detallada de trabajadores en una pausa, mostrando realismo social y cotidiano.</p>
+                <p class="precio">$75.000</p>
+                <button onclick="agregarAlCarrito('Descanso del Obrero', 75000)">Agregar al carrito</button>
+            </div>
+
+            <h2 id="esculturas">Esculturas</h2>
+            <div class="producto">
+                <img src="img/escultura1.jpg" alt="Escultura 1">
+                <h3>La Piedad Moderna</h3>
+                <p>Inspirada en la obra clásica de Miguel Ángel, esta escultura representa con gran realismo la compasión y el sufrimiento humano.</p>
+                <p class="precio">$120.000</p>
+                <button onclick="agregarAlCarrito('La Piedad Moderna', 120000)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/escultura2.jpg" alt="Escultura 2">
+                <h3>Equilibrio Geométrico</h3>
+                <p>Obra abstracta que explora la relación entre formas cúbicas y esféricas.</p>
+                <p class="precio">$130.000</p>
+                <button onclick="agregarAlCarrito('Equilibrio Geométrico', 130000)">Agregar al carrito</button>
+            </div>
+            <div class="producto">
+                <img src="img/escultura3.jpg" alt="Escultura 3">
+                <h3>Gracia Helénica</h3>
+                <p>Esta escultura en mármol blanco evoca la elegancia del arte clásico griego.</p>
+                <p class="precio">$110.000</p>
+                <button onclick="agregarAlCarrito('Gracia Helénica', 110000)">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <ul id="lista-carrito"></ul>
+            <p>Total: <span id="total">$0</span></p>
+        </section>
+
+        <section id="pago">
+            <h2>Pago Electrónico</h2>
+            <form onsubmit="procesarPago(event)">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Número de Tarjeta" required>
+                <input type="text" placeholder="Vencimiento (MM/AA)" required>
+                <input type="text" placeholder="CVV" required>
+                <button type="submit">Pagar</button>
+            </form>
+            <p id="mensaje-pago"></p>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
